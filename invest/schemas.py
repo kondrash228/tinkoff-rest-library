@@ -76,10 +76,43 @@ class InstrumentStatus(str, Enum):
 
 
 class ShareType(str, Enum):
-    pass
+    SHARE_TYPE_UNSPECIFIED = 0
+    SHARE_TYPE_COMMON = 1
+    SHARE_TYPE_PREFERRED = 2
+    SHARE_TYPE_ADR = 3
+    SHARE_TYPE_GDR = 4
+    SHARE_TYPE_MLP = 5
+    SHARE_TYPE_NY_REG_SHRS = 6
+    SHARE_TYPE_CLOSED_END_FUND = 7	
+    SHARE_TYPE_REIT = 8
 
 
+class AssetType(str, Enum):
+    ASSET_TYPE_UNSPECIFIED = 0
+    ASSET_TYPE_CURRENCY = 1
+    ASSET_TYPE_COMMODITY = 2
+    ASSET_TYPE_INDEX = 3
+    ASSET_TYPE_SECURITY = 4
 
+
+class StructuredProductType(str, Enum):
+    SP_TYPE_UNSPECIFIED = 0
+    SP_TYPE_DELIVERABLE = 1
+    SP_TYPE_NON_DELIVERABLE = 2
+
+
+class EditFavoritesActionType(str, Enum):
+    EDIT_FAVORITES_ACTION_TYPE_UNSPECIFIED = 0
+    EDIT_FAVORITES_ACTION_TYPE_ADD = 1
+    EDIT_FAVORITES_ACTION_TYPE_DEL = 2
+
+
+class RealExchange(str, Enum):
+    REAL_EXCHANGE_UNSPECIFIED = 0
+    REAL_EXCHANGE_MOEX = 1
+    REAL_EXCHANGE_RTS = 2
+    REAL_EXCHANGE_OTC = 3
+    
 
 
 
