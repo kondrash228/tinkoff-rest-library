@@ -2,6 +2,8 @@ from pydantic import BaseModel, Field
 from typing import List
 from schemas import AccountType, AccountStatus, AccessLevel
 
+# ответы запросов 
+
 class Account(BaseModel):
     id: int
     type: AccountType
