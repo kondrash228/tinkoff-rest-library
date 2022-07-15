@@ -1,6 +1,7 @@
 Библиотека invest
 
 - [Документация для разработчиков](https://tinkoff.github.io/investAPI/)
+- [Swagger](https://tinkoff.github.io/investAPI/swagger-ui/#)
 
 Задачи:
  ◦ Построить иерархию библиотеки

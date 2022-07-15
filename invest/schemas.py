@@ -8,13 +8,15 @@ __all__ = (
     'SecurityTradingStatus'
 )
 
+"""
+переделать enums
+"""
 
-# сервис аккаунтов
-class AccountType(str, Enum):
-    ACCOUNT_TYPE_UNSPECIFIED = 0
-    ACCOUNT_TYPE_TINKOFF = 1
-    ACCOUNT_TYPE_TINKOFF_IIS = 2
-    ACCOUNT_TYPE_INVEST_BOX = 3
+class AccountType(Enum):
+    ACCOUNT_TYPE_UNSPECIFIED = 'ACCOUNT_TYPE_UNSPECIFIED'
+    ACCOUNT_TYPE_TINKOFF = 'ACCOUNT_TYPE_TINKOFF'
+    ACCOUNT_TYPE_TINKOFF_IIS = 'ACCOUNT_TYPE_TINKOFF_IIS'
+    ACCOUNT_TYPE_INVEST_BOX = 'ACCOUNT_TYPE_INVEST_BOX'
 
 
 class AccountStatus(str, Enum):

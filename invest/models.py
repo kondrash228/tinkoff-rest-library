@@ -5,14 +5,18 @@ from schemas import AccountType, AccountStatus, AccessLevel
 # ответы запросов 
 
 class Account(BaseModel):
-    id: int
+    id: str
     type: AccountType
     name: str
-    status: AccountStatus
+    status: str
     opened_date: str = Field(alias='openedDate')
     closed_date: str = Field(alias='closedDate')
-    access_level: AccessLevel = Field(alias='accessLevel')
+    access_level: str = Field(alias='accessLevel')
 
 
 class GetAccountsResponse(BaseModel):
+    accounts: List[Account]
+
+
+class GetAccountsRequest(BaseModel):
     accounts: List[Account]
