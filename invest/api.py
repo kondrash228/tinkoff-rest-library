@@ -16,10 +16,13 @@ from models import (
 from pprint import pprint
 
 
-def get_accounts(url: str, token: str):
-    response = requests.post(url=url, headers=headers)
-    if response.status_code == 200:
-        return response
+class Api:
+    
+
+# def get_accounts(url: str, token: str):
+#     response = requests.post(url=url, headers=headers)
+#     if response.status_code == 200:
+#         return response
 
 
 TOKEN = 't.BLtZWmlj_Raj-77CQuiflaKQQerwa1MSn56eO_AulW8X2QcC24Bb5RiBF_rjQdzNORfzTEhGmfdJoJeezyu-xQ'
